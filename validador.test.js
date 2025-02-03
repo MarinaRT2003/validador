@@ -1,7 +1,7 @@
 const {validatePassword} = require("./validador");
 //contraseña 
 test("Validar contraseña", () => {
-    expect(validatePassword("12345678")).toBe(true);
+    expect(validatePassword("12345678")).toBe(false);
 });
 //no  pasa porque no llega hasta 8
 test("Validar contraseña", () => {
@@ -9,7 +9,7 @@ test("Validar contraseña", () => {
 });
 //contraseña 2
 test("Validar contraseña", () => {
-    expect(validatePassword("Luis50")).toBe(true);
+    expect(validatePassword("Luis50")).toBe(false);
 });
 //no pasa porque no tiene una mayuscula
 test("Validar contraseña", () => {
@@ -17,7 +17,7 @@ test("Validar contraseña", () => {
 });
 //contraseña 3
 test("Validar contraseña", () => {
-    expect(validatePassword("MEMAMI")).toBe(true);
+    expect(validatePassword("MEMAMI")).toBe(false);
 });
 //no pasa porque esta la ultima en minuscula
 test("Validar contraseña", () => {
@@ -25,7 +25,7 @@ test("Validar contraseña", () => {
 });
 //contraseña 4
 test("Validar contraseña", () => {
-    expect(validatePassword("Lopo15")).toBe(true);
+    expect(validatePassword("Lopo15")).toBe(false);
 })
 //no tiene numeros
 test("Validar contraseña", () => {    
