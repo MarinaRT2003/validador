@@ -1,5 +1,5 @@
-const {validatePassword} = require("./validador.js");
-//contraseña 1
+const {validatePassword} = require("./validador");
+//contraseña 
 test("Validar contraseña", () => {
     expect(validatePassword("12345678")).toBe(true);
 });
